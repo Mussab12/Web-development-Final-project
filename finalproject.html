@@ -1,0 +1,224 @@
+<!DOC html>
+<html lan="en">
+<head>
+<title>
+FORM
+</title>
+<link rel="stylesheet" type="text/css" href="finalproject.css">
+<script type="text/javascript"src="finalproject.js">
+
+
+
+</script>
+
+</head>
+
+<body>
+<form>	
+<h1 id="heading">ADMISSION FORM</h1>
+<img src="https://www.pngkey.com/png/detail/0-3999_kathmandu-don-bosco-college-don-bosco-college-nepal.png" alt="Kathmandu Don Bosco College - Don Bosco College Nepal@pngkey.com">
+<br>
+<br>
+<div id="fullpage">
+<label class="label_firstname">First Name:</label>
+&ensp;
+&nbsp;
+&nbsp;
+&ensp;
+&ensp;
+<input class="label_name" name="name"type="text"id="firstname"onblur="namevalidation();"required><span id="namevalid"></span>
+<br>
+<br>
+<label class="label_naming">Last Name:</label>
+&emsp;
+&ensp;
+&emsp;
+<input class="label_lastname"name="lastname"type="text"id="lastname"required>
+<br>
+<br>
+<label id="secret">Password:</label>
+&ensp;<!--for adding two spaces-->
+&ensp;
+&nbsp;<!--this is for single space-->
+&nbsp;
+&ensp;
+&nbsp;
+    <input type="password" id="psw" name="psw"onblur="passwordcheck();"><span id="message2"></span><br><br>
+	<label>Confirm Password:</label>
+	<input type="password"id="psw2"name="psw2">
+<br>
+<br>
+<label for="phone">Phone no:</label>
+&nbsp;
+&ensp;
+&nbsp;
+&nbsp;
+&nbsp;
+&ensp;
+&nbsp;
+
+<input type="tel" id="phoneno" name="phone" placeholder="123-45-678" pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}"><span id="message"></span><br><br>
+  <small>Format: XX-XXX-XXXXXXX</small>
+<br>
+<br>
+<label for="email">Email:</label>
+
+<input type="email" id="email"
+       pattern=".+@globex.com" size="30">
+<br>
+<br>
+Gender:
+&emsp;
+&ensp;
+<input type="radio"id="male"name="gender"value="male">
+<label>Male</label>
+<input type="radio"id="female"name="gender"value="female">
+<label>Female</label>
+<input type="radio"id="other"name="gender"value="other">
+<label>Other</label>
+<br>
+<br>
+Country:
+
+<select id="country">
+<option value="Pakistan">Pakistan</option>
+<option value="Russia">Russia</option>
+<option value="china">China</option>
+<option value="india">India</option>
+<option value="southafrica">South Africa</option>
+<option value="bangladesh">Bangladesh</option>
+<option value="srilanka">Srilanka</option>
+<option value="america">United States</option>
+<option value="england">England</option>
+<option value="nepal">Nepal</option>
+<option value="israel">Israel</option>
+<option value="turkey">Turkey</option>
+<option value="malaysia">Malaysia</option>
+<option value="afghanistan">Afghanistan</option>
+<option value="algeria">Algeria</option>
+<option value="argentina">Argentina</option>
+<option value="albania">Albania</option>
+<option value="armenian">Armenia</option>
+<option value="maldives">Maldives</option>
+<option value="mexico">Mexico</option>
+<option value="morocco">Morocco</option>
+<option value="zimbabwe">Zimbabwe</option>
+<option value="belgium">Belgium</option>
+<option value="brazil">Brazil</option>
+<option value="iran">Iran</option>
+<option value="newzealand">New Zealand</option>
+<option value="chile">Chile</option>
+<option value="uae">UAE</option>
+<option value="paris">Paris</option>
+<option value="spain">Spain</option>
+<option value="syria">Syria</option>
+<option value="germany">Germany</option>
+<option value="takikistan">Tajikistan</option>
+<option value="indonesia">Indonesia</option>
+<option value="italy">Italy</option>
+<option value="ireland">Ireland</option>
+<option value="iraq">Iraq</option>
+<option value="japan">Japan</option>
+<option value="saudiarabia">Saudi Arabia</option>
+
+
+</select>
+<br>
+<br>
+Nationality:
+<select id="nationality">
+<option value="Muslim">Pakistani</option>
+<option value="Christian">Foreign</option>
+</select>
+<br>
+<br>
+Parent Name:
+&emsp;
+&emsp;
+<input type="text"name="parent"required>
+<br>
+<br>
+Income:
+&ensp;
+<input type="checkbox"id="income"/>
+<label>$ 50,000</label><br>
+&nbsp;<!--this is for tab spacing-->
+&ensp;
+&ensp;
+&ensp;
+&nbsp;&emsp;
+<input type="checkbox"id="income"/>
+<label>$ 75,000</label>
+<br>
+&nbsp;
+&ensp;
+&ensp;
+&ensp;
+&nbsp;&emsp;
+<input type="checkbox"id="income"/>
+<label>$ 150,000</label>
+<br>
+<br>
+Program:
+<select id="program">
+<option value="cs">Bachelors In Computer Science</option>
+<option value="ee">Bachelors In Electrical Engineering</option>
+<option value="acounting">Bachelors In Accounting and Finance</option>
+<option value="mechatronics">Bachelors In Mechatronics Engineering</option>
+<option value="dpharmacy">Doctor Of Pharmaceutical Sciences</option>
+<option value="dpt">Doctor Of Phyical Therapy</option>
+<option value="se">Bachelors In Software Engineering</option>
+<option value="mbbs">Bachelor of Medicine and Bachelor of Surgery</option>
+<option value="mechanical">Bachelors In Mechanical Engineering</option>
+
+</select>
+<br>
+<br>
+IdCard:
+&emsp; 
+&ensp;
+&ensp;
+&nbsp;
+&nbsp;
+&ensp;
+<input type="text"name="idcard"required>
+<br>
+<br>
+Marks:
+&emsp; 
+&ensp;
+&ensp;
+&nbsp;
+&nbsp;
+&nbsp;
+&nbsp;
+<input type="text"name="marks" id="marks"required>
+<br>
+<br>
+Date Of Birth:
+&ensp;
+&nbsp;
+&nbsp;
+<input type="date">
+<br>
+<br>
+<span id="submit1"onclick="formsubmission();"><h2>Submit<h2></submit>
+
+
+
+
+
+
+
+
+
+
+</div>
+
+</form>
+
+
+
+</body>
+
+</html>
